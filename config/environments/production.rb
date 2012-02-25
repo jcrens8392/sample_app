@@ -3,8 +3,7 @@ SampleApp::Application.configure do
 
   # Code is not reloaded between requests
   config.cache_classes = true
-
-  # Full error reports are disabled and caching is turned on
+# Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
@@ -32,6 +31,7 @@ SampleApp::Application.configure do
 
   # See everything in the log (default is :info)
   # config.log_level = :debug
+  config.log_level = :warn
 
   # Prepend all log lines with the following tags
   # config.log_tags = [ :subdomain, :uuid ]
@@ -47,6 +47,7 @@ SampleApp::Application.configure do
 
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
+  config.assets.precompile += %w(blueprint/screen.css blueprint/print.css blueprint/ie.css custom.css)
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
