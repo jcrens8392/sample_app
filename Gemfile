@@ -40,7 +40,6 @@ group :development do
 	gem 'rspec-rails'
   gem 'annotate', '~> 2.4.1.beta'
   gem 'sqlite3'
-  gem 'therubyracer'
 end
 
 group :test do
@@ -48,8 +47,9 @@ group :test do
 	gem 'webrat'
   gem 'factory_girl_rails'
   gem 'sqlite3'
-  gem 'therubyracer'
 end
+
+gem 'therubyracer'
 
 group :production do
   gem 'pg'
