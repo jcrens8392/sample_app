@@ -5,8 +5,6 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', :group => :development
-
 gem 'json'
 
 # Gems used only for assets and not required
@@ -41,12 +39,16 @@ gem 'jquery-rails'
 group :development do
 	gem 'rspec-rails'
   gem 'annotate', '~> 2.4.1.beta'
+  gem 'sqlite3'
+  gem 'therubyracer'
 end
 
 group :test do
 	gem 'rspec-rails'
 	gem 'webrat'
   gem 'factory_girl_rails'
+  gem 'sqlite3'
+  gem 'therubyracer'
 end
 
 group :production do
@@ -54,6 +56,5 @@ group :production do
 end
 
 gem 'execjs'
-gem 'therubyracer'
 
 gem 'gravatar_image_tag'
