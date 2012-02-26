@@ -46,7 +46,10 @@ end
 group :test do
 	gem 'rspec-rails'
 	gem 'webrat'
+  gem 'factory_girl_rails'
 end
 
 gem 'execjs'
 gem 'therubyracer'
+
+gem 'gravatar_image_tag'
